@@ -13,8 +13,6 @@ RUN cd web && bun install
 
 COPY ./test-codebase ./test-codebase
 
-COPY ./library ./library
-
 COPY ./ ./
 
 RUN cd web && bun run build
