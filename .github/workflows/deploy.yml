@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - lazarkit-website/**
+      - web/**
       - test-codebase/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/examples/**
       - .github/workflows/deploy.yml
   workflow_dispatch:
@@ -18,7 +18,7 @@ env:
   REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
   REPO_FOLDER: compose
-  BASE_DIR: lazarkit-website
+  BASE_DIR: web
   SERVICE_FOLDER: /home/ftcontrol-docs
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}

@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "lazarkit-website",
+      "name": "web",
       "devDependencies": {
         "@sveltejs/adapter-static": "^3.0.1",
         "@sveltejs/kit": "^2.8.1",
