@@ -1,11 +1,12 @@
 # Changelog
 
 ## v0.6.6
-- [Panels PWA for quick launch](/docs/panels/overview/)
-- Panels version check inside UI
-- Notifications can perform actions
-- [Canvas offset presets](/docs/panels/fieldview/)
-- Implemented refetching of Configurables values when changed by OpMode
+- *Forntend/UI*: [Panels PWA for quick launch](/docs/panels/overview/)
+- *Forntend/UI*: Panels version check
+- *Forntend/UI*: Notifications can perform actions
+- *FieldView*: [FieldView offset presets](/docs/panels/fieldview/)
+- *Configurables*: Implemented updating values when changed by OpMode
+- *Configurables*: Preserve decimal precision and avoid scientific notation
 
 ## v0.6.5
 - Improved logs with generic Logger & callerClassName
