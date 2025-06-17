@@ -7,6 +7,7 @@
 - *FieldView*: [FieldView offset presets](/docs/panels/fieldview/)
 - *Configurables*: Implemented updating values when changed by OpMode
 - *Configurables*: Preserve decimal precision and avoid scientific notation
+- *Configurables*: Fixed not loading after code upload
 
 ## v0.6.5
 - Improved logs with generic Logger & callerClassName
