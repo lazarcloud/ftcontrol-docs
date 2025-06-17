@@ -4,6 +4,8 @@
 - *Forntend/UI*: [Panels PWA for quick launch](/docs/panels/overview/)
 - *Forntend/UI*: Panels version check
 - *Forntend/UI*: Notifications can perform actions
+- *Forntend/UI*: Fixed battery rounding to 2 decimals
+- *Forntend/UI*: Added min battery display
 - *FieldView*: [FieldView offset presets](/docs/panels/fieldview/)
 - *Configurables*: Implemented updating values when changed by OpMode
 - *Configurables*: Preserve decimal precision and avoid scientific notation
