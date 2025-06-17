@@ -1,7 +1,10 @@
 # Changelog
 
 ## v0.6.6
-- Panels PWA for quick launch
+- [Panels PWA for quick launch](/docs/panels/overview/)
+- Panels version check inside UI
+- Notifications can perform actions
+- [Canvas offset presets](/docs/panels/fieldview/)
 
 ## v0.6.5
 - Improved logs with generic Logger & callerClassName

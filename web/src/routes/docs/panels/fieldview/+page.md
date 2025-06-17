@@ -21,6 +21,28 @@ There are also methods on the `Canvas` object to change the orientation programa
 2. The input order is flexible, you can provide Drawable objects and text lines in any order within the debug function.
 3. Every Drawable object requires a `look` to define its visual appearance. The look specifies styling attributes such as fillColor, outlineColor, outlineWidth.
 
+## Offsets
+
+You can offset the canvas coordinate system using either custom parameters or predefined presets. This action can be performed on both the `Canvas` and the `Telemetry` instance exposed by Panels.
+
+### Included Presets
+
+* `PANELS`: Default
+* `ROADRUNNER`
+* `PEDRO_PATHING`
+
+You can also define custom presets by implementing the `CanvasPreset` interface.
+
+### Example
+
+```kotlin
+val PEDRO_PATHING = CanvasPreset {
+    it.offsetX = -24.0 * 3
+    it.offsetY =  24.0 * 3
+    it.rotation = CanvasRotation.DEG_270
+}
+```
+
 ## Example OpMode File: `TestOpMode.kt`
 Below is an example of how field telemetry can be implemented in an OpMode:
 
