@@ -10,6 +10,16 @@
    - If you're using a **Control Hub**, go to:  
      [192.168.43.1:8001](http://192.168.43.1:8001)
 
+## Installing the app
+Panels offers a Progressive Web App that can be installed from any chromium-based browser.
+
+<video width="100%" autoplay loop>
+  <source src="/docs/pwa.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<img src="/docs/pwa.png"/>
+
 ## Quick Tip
 To scroll horizontally within a container, hold down **Shift** and scroll using the mouse wheel.
 

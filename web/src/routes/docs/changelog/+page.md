@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.6.6
+- Panels PWA for quick launch
+
 ## v0.6.5
 - Improved logs with generic Logger & callerClassName
 - Configurables bug fixes
