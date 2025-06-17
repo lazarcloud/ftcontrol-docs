@@ -12,6 +12,12 @@
 
 ## Installing the app
 Panels offers a Progressive Web App that can be installed from any chromium-based browser.
+> Note that you will have to trust your specified origin to install the app.
+
+Steps:
+- Go to Chrome Flags: `chrome://flags/#unsafely-treat-insecure-origin-as-secure`
+- Add `http://192.168.49.1:8001` or `http://192.168.43.1:8001`
+- Relaunch browser
 
 <video width="100%" autoplay loop>
   <source src="/docs/pwa.mp4" type="video/mp4">
