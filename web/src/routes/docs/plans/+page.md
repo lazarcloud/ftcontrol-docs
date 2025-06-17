@@ -11,6 +11,7 @@ You can suggest a new feature via the [official email](mailto:ftcontrol@bylazar.
 * Themes
 * Implement individual widget state (using Svelte's `setContext`)
 * Separate UI for empty widget groups
+* Toolstips that point to docs
 
 ## Configurables
 
