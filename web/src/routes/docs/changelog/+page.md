@@ -5,6 +5,7 @@
 - Panels version check inside UI
 - Notifications can perform actions
 - [Canvas offset presets](/docs/panels/fieldview/)
+- Implemented refetching of Configurables values when changed by OpMode
 
 ## v0.6.5
 - Improved logs with generic Logger & callerClassName

@@ -16,6 +16,8 @@ Below is an example of how telemetry can be implemented in an OpMode:
 ### The `debug` Function
 The `debug` function is used to log data that will later be displayed either on the dashboard or transmitted to the Driver Station. It supports multiple types of inputs, making it versatile for various use cases.
 
+> To add an entry to the text telemetry, you must provide a string, otherwise, the value will be ignored.
+
 Example for logging multiple text lines:
 ```kotlin
 panelsTelemetry.debug(
