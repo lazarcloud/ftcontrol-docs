@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.7
+- *Plugins*: Log all files in the assets directory for debugging
+- *Configurables*: Prevent recurring static fields value
+- *Configurables*: Show recurring static fields as a different global class
+
 ## v0.6.6
 - *Forntend/UI*: [Panels PWA for quick launch](/docs/panels/overview/)
 - *Forntend/UI*: Panels version check
