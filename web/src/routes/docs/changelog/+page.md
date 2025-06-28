@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.6.8
+- *Logs*: Fixed logs spam
+
 ## v0.6.7
 - *Plugins*: Log all files in the assets directory for debugging
 - *Configurables*: Prevent recurring static fields value
