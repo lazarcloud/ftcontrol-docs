@@ -2,6 +2,7 @@
 
 ## v0.6.8
 - *Logs*: Fixed logs spam
+- *Telemetry*: Changed update frequency
 
 ## v0.6.7
 - *Plugins*: Log all files in the assets directory for debugging
