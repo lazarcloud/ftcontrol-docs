@@ -1,14 +1,24 @@
 <script>
   async function getData() {
-    try {
-      const response = await fetch("https://mymaven.bylazar.com/api/maven/latest/version/releases/com/bylazar/ftcontrol");
-      if (!response.ok) throw new Error("Failed to fetch");
-      const text = await response.json();
-      return text;
-    } catch (err) {
-      throw err;
-    }
+  const url = "https://raw.githubusercontent.com/lazarcloud/ftcontrol-maven/refs/heads/main/releases/com/bylazar/ftcontrol/maven-metadata-local.xml";
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Failed to fetch metadata");
+
+    const xmlText = await response.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+
+    const latestVersion = xmlDoc.querySelector("latest")?.textContent;
+    console.log(latestVersion)
+    return latestVersion;
+  } catch (error) {
+    console.error("Error fetching version:", error);
+    return null;
   }
+}
+
 </script>
 
 # FTControl Setup Guide
@@ -111,11 +121,12 @@ dependencies {
 ```
 
 {#await getData()}
-    Replace VERSION with the latest version: 0.0.0.
-{:then res}
-    Replace VERSION with the latest version: {res.version}.
+    Replace VERSION with the latest version: 0.0.0
+{:then version}
+    Replace VERSION with the latest version: {version}
 {:catch err}
-    Latest version fetch failed: {err.message}.
+    Latest version fetch failed: {err.message}
+    [Find Version](https://raw.githubusercontent.com/lazarcloud/ftcontrol-maven/refs/heads/main/releases/com/bylazar/ftcontrol/maven-metadata-local.xml)
 {/await}
 
 Make sure you have the sdk-35 isntalled. Go to Settings > SDK Manager and install the appropriate version.
